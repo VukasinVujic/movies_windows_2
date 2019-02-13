@@ -25,7 +25,7 @@ class MoviesController extends Controller
      */
     public function create()
     {
-        //
+        return view('moviesFolder.create');
     }
 
     /**
@@ -36,7 +36,16 @@ class MoviesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $request->validate([
+            'title' => 'required',
+            'genre' => 'required',
+            'year' => 'required|numeric|between:1900,'.date('Y'),
+            'storyline' => 'required|max:1000'
+        ]);
+        Movie::create($request->all());
+
+        return redirect('http://localhost/VIVIFY/napredni/Laravel/Predavanje_6/radOdKuce/movies/public/movies');
     }
 
     /**

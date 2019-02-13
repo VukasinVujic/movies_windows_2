@@ -13,7 +13,7 @@
               <a class="nav-link" href="http://localhost/VIVIFY/napredni/Laravel/Predavanje_6/radOdKuce/movies/public/movies/">Movies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/movies/create">Add movie</a>
+              <a class="nav-link" href="http://localhost/VIVIFY/napredni/Laravel/Predavanje_6/radOdKuce/movies/public/movies/create">Add movie</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
